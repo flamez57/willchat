@@ -3,12 +3,13 @@
 namespace App\Jobs;
 
 use App\Repositories\FanRepository;
+use Cache;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
-use Cache;
+use App\Fan;
 
 class SyncWechatFans implements ShouldQueue
 {
@@ -45,6 +46,7 @@ class SyncWechatFans implements ShouldQueue
         $this->fanRepository = app(FanRepository::class);
 
         $nextOpenid = null;
+        Cache::forget('openids_'.$accountId);
         do {
             $lists = $wechatFansService->lists($nextOpenid);
 
@@ -61,19 +63,9 @@ class SyncWechatFans implements ShouldQueue
             $nextOpenid = $lists['next_openid'];
         } while ($lists['next_openid']);
 
-        $openids = Cache::get('openids_'.$accountId);
+        $openids = Cache::pull('openids_'.$accountId);
 
-        \Log::debug($openids);
-
-        //TODO: 删除本地库中存在但微信服务器上不存在的粉丝数据，即已经取关的粉丝
-        \App\Fan::where('account_id', $accountId)->whereNotIn('openid', $openids)->delete();
-
-//        $this->fanRepository->scopeQuery(function ($query) use ($accountId, $openids) {
-//            $query->where('account_id', $accountId)->whereNotIn('openid', $openids)->delete();
-//
-//            return $query;
-//        });
-
-        Cache::forget('openids_'.$accountId);
+        // 删除本地库中存在但微信服务器上不存在的粉丝数据，即已经取关的粉丝
+        Fan::where('account_id', $accountId)->whereNotIn('openid', $openids)->delete();
     }
 }
