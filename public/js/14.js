@@ -1,17 +1,17 @@
 webpackJsonp([14],{
 
-/***/ 205:
+/***/ 204:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(291)
+__webpack_require__(290)
 
-var Component = __webpack_require__(47)(
+var Component = __webpack_require__(46)(
   /* script */
-  __webpack_require__(223),
+  __webpack_require__(222),
   /* template */
-  __webpack_require__(273),
+  __webpack_require__(272),
   /* scopeId */
   "data-v-bca05e18",
   /* cssModules */
@@ -39,22 +39,22 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 223:
+/***/ 222:
 /***/ (function(module, exports) {
 
 
 
 /***/ }),
 
-/***/ 252:
+/***/ 251:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)();
+exports = module.exports = __webpack_require__(12)();
 exports.push([module.i, "\n.main[data-v-bca05e18] {\n  display: block;\n}\n.main .welcome[data-v-bca05e18] {\n    display: block;\n    font-size: 3rem;\n    text-align: center;\n    margin-top: 3rem;\n}\n.main .welcome[data-v-bca05e18]:hover {\n      color: red;\n}\n.main .btn-back[data-v-bca05e18] {\n    display: block;\n    margin: 20px auto;\n}\n", ""]);
 
 /***/ }),
 
-/***/ 273:
+/***/ 272:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -85,17 +85,17 @@ if (false) {
 
 /***/ }),
 
-/***/ 291:
+/***/ 290:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(252);
+var content = __webpack_require__(251);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(48)("5160d758", content, false);
+var update = __webpack_require__(47)("5160d758", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags

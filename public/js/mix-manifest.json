@@ -1,5 +1,5 @@
 {
   "/user.js": "/user.js",
-  "/mix.js": "/mix.js",
-  "/vendor.js": "/vendor.js"
+  "/vendor.js": "/vendor.js",
+  "/manifest.js": "/manifest.js"
 }

@@ -1,17 +1,17 @@
 webpackJsonp([4],{
 
-/***/ 216:
+/***/ 215:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(290)
+__webpack_require__(289)
 
-var Component = __webpack_require__(47)(
+var Component = __webpack_require__(46)(
   /* script */
-  __webpack_require__(234),
+  __webpack_require__(233),
   /* template */
-  __webpack_require__(272),
+  __webpack_require__(271),
   /* scopeId */
   "data-v-af32bd26",
   /* cssModules */
@@ -39,15 +39,15 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 234:
+/***/ 233:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuex__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuex__ = __webpack_require__(13);
 
 
 
@@ -101,15 +101,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 251:
+/***/ 250:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)();
+exports = module.exports = __webpack_require__(12)();
 exports.push([module.i, "\n.avatar-uploader[data-v-af32bd26] {\n  border: 1px dashed #d9d9d9;\n  border-radius: 6px;\n  cursor: pointer;\n  position: relative;\n  overflow: hidden;\n  background-color: #fff;\n  text-align: center;\n}\n.avatar-uploader .el-upload[data-v-af32bd26] {\n    background-color: grey;\n}\n.avatar-uploader .el-upload[data-v-af32bd26]:hover {\n      border-color: #20a0ff;\n}\n.avatar-uploader-icon[data-v-af32bd26] {\n  font-size: 28px;\n  color: #8c939d;\n  width: 178px;\n  height: 178px;\n  line-height: 178px;\n  text-align: center;\n}\n.avatar[data-v-af32bd26] {\n  width: 230px;\n  height: 230px;\n  display: block;\n}\n", ""]);
 
 /***/ }),
 
-/***/ 272:
+/***/ 271:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -156,17 +156,17 @@ if (false) {
 
 /***/ }),
 
-/***/ 290:
+/***/ 289:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(251);
+var content = __webpack_require__(250);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(48)("08e0e4e8", content, false);
+var update = __webpack_require__(47)("08e0e4e8", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags

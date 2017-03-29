@@ -1,17 +1,17 @@
 webpackJsonp([15],{
 
-/***/ 204:
+/***/ 203:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(282)
+__webpack_require__(281)
 
-var Component = __webpack_require__(47)(
+var Component = __webpack_require__(46)(
   /* script */
-  __webpack_require__(222),
+  __webpack_require__(221),
   /* template */
-  __webpack_require__(264),
+  __webpack_require__(263),
   /* scopeId */
   "data-v-4ba550c1",
   /* cssModules */
@@ -39,7 +39,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 222:
+/***/ 221:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62,15 +62,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 243:
+/***/ 242:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)();
+exports = module.exports = __webpack_require__(12)();
 exports.push([module.i, "\n.post[data-v-4ba550c1] {\n  display: block;\n  overflow: hidden;\n  padding: 3rem;\n  background-color: #fff;\n}\n.post .title[data-v-4ba550c1] {\n    font-size: 20px;\n    text-align: center;\n}\n.post .content[data-v-4ba550c1] {\n    display: block;\n    font-size: 16px;\n    line-height: 1.5em;\n}\n", ""]);
 
 /***/ }),
 
-/***/ 264:
+/***/ 263:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -94,17 +94,17 @@ if (false) {
 
 /***/ }),
 
-/***/ 282:
+/***/ 281:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(243);
+var content = __webpack_require__(242);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(48)("917b5fb2", content, false);
+var update = __webpack_require__(47)("917b5fb2", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags

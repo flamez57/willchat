@@ -1,17 +1,17 @@
 webpackJsonp([1],{
 
-/***/ 210:
+/***/ 209:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(276)
+__webpack_require__(275)
 
-var Component = __webpack_require__(47)(
+var Component = __webpack_require__(46)(
   /* script */
-  __webpack_require__(228),
+  __webpack_require__(227),
   /* template */
-  __webpack_require__(258),
+  __webpack_require__(257),
   /* scopeId */
   "data-v-126bb182",
   /* cssModules */
@@ -39,7 +39,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 228:
+/***/ 227:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -85,29 +85,29 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 237:
+/***/ 236:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)();
-exports.push([module.i, "\n.right-main[data-v-126bb182] {\n  background-color: #fff;\n}\n.menu-preview[data-v-126bb182] {\n  display: block;\n  overflow: hidden;\n  position: relative;\n  width: 320px;\n  height: 500px;\n  background-color: #fff;\n  margin: 0 auto;\n  border: 1px solid #ddd;\n}\n.menu-preview .header[data-v-126bb182] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    position: absolute;\n    width: 100%;\n    height: 65px;\n    background-image: url("+__webpack_require__(255)+");\n    background-size: 100%;\n    background-repeat: no-repeat;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-box-align: end;\n        -ms-flex-align: end;\n            align-items: flex-end;\n}\n.menu-preview .header .account-name[data-v-126bb182] {\n      color: #fff;\n      margin-bottom: 10px;\n}\n.menu-preview .footer[data-v-126bb182] {\n    display: block;\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    width: 100%;\n    height: 50px;\n    background-image: url("+__webpack_require__(254)+");\n    background-size: 100%;\n    background-repeat: no-repeat;\n}\n.edit-panel[data-v-126bb182] {\n  display: block;\n  overflow: hidden;\n  background-color: #e7e7e7;\n  width: 100%;\n  padding: 1rem;\n  border-radius: 5px;\n  border: 1px solid #eee;\n}\n.edit-panel .header[data-v-126bb182] {\n    padding-bottom: 1rem;\n    border-bottom: 1px solid #d5d5d5;\n}\n.edit-panel .header .btn-delete-menu[data-v-126bb182] {\n      float: right;\n}\n.edit-panel .body[data-v-126bb182] {\n    padding: 1rem;\n}\n.buttons[data-v-126bb182] {\n  margin-top: 30px;\n}\n", ""]);
+exports = module.exports = __webpack_require__(12)();
+exports.push([module.i, "\n.right-main[data-v-126bb182] {\n  background-color: #fff;\n}\n.menu-preview[data-v-126bb182] {\n  display: block;\n  overflow: hidden;\n  position: relative;\n  width: 320px;\n  height: 500px;\n  background-color: #fff;\n  margin: 0 auto;\n  border: 1px solid #ddd;\n}\n.menu-preview .header[data-v-126bb182] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    position: absolute;\n    width: 100%;\n    height: 65px;\n    background-image: url("+__webpack_require__(254)+");\n    background-size: 100%;\n    background-repeat: no-repeat;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-box-align: end;\n        -ms-flex-align: end;\n            align-items: flex-end;\n}\n.menu-preview .header .account-name[data-v-126bb182] {\n      color: #fff;\n      margin-bottom: 10px;\n}\n.menu-preview .footer[data-v-126bb182] {\n    display: block;\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    width: 100%;\n    height: 50px;\n    background-image: url("+__webpack_require__(253)+");\n    background-size: 100%;\n    background-repeat: no-repeat;\n}\n.edit-panel[data-v-126bb182] {\n  display: block;\n  overflow: hidden;\n  background-color: #e7e7e7;\n  width: 100%;\n  padding: 1rem;\n  border-radius: 5px;\n  border: 1px solid #eee;\n}\n.edit-panel .header[data-v-126bb182] {\n    padding-bottom: 1rem;\n    border-bottom: 1px solid #d5d5d5;\n}\n.edit-panel .header .btn-delete-menu[data-v-126bb182] {\n      float: right;\n}\n.edit-panel .body[data-v-126bb182] {\n    padding: 1rem;\n}\n.buttons[data-v-126bb182] {\n  margin-top: 30px;\n}\n", ""]);
 
 /***/ }),
 
-/***/ 254:
+/***/ 253:
 /***/ (function(module, exports) {
 
 module.exports = "/js/images/bg_mobile_foot.png?544fc30e6b6e9d334d81dac6a47cd65b";
 
 /***/ }),
 
-/***/ 255:
+/***/ 254:
 /***/ (function(module, exports) {
 
 module.exports = "/js/images/bg_mobile_head.png?1c93128220dc4933a1698b5101140b07";
 
 /***/ }),
 
-/***/ 258:
+/***/ 257:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -306,17 +306,17 @@ if (false) {
 
 /***/ }),
 
-/***/ 276:
+/***/ 275:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(237);
+var content = __webpack_require__(236);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(48)("3c64f929", content, false);
+var update = __webpack_require__(47)("3c64f929", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags

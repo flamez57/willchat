@@ -1,17 +1,17 @@
 webpackJsonp([12],{
 
-/***/ 207:
+/***/ 206:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(286)
+__webpack_require__(285)
 
-var Component = __webpack_require__(47)(
+var Component = __webpack_require__(46)(
   /* script */
-  __webpack_require__(225),
+  __webpack_require__(224),
   /* template */
-  __webpack_require__(268),
+  __webpack_require__(267),
   /* scopeId */
   "data-v-6842daca",
   /* cssModules */
@@ -39,7 +39,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 225:
+/***/ 224:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -160,15 +160,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 247:
+/***/ 246:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)();
+exports = module.exports = __webpack_require__(12)();
 exports.push([module.i, "\n.main .material-img[data-v-6842daca] {\n  display: inline-block;\n  width: 200px;\n}\n", ""]);
 
 /***/ }),
 
-/***/ 268:
+/***/ 267:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -391,17 +391,17 @@ if (false) {
 
 /***/ }),
 
-/***/ 286:
+/***/ 285:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(247);
+var content = __webpack_require__(246);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(48)("05eaf786", content, false);
+var update = __webpack_require__(47)("05eaf786", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags

@@ -14,6 +14,7 @@
     <!-- No Baidu Siteapp-->
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
 
+    <link rel="stylesheet" href="{{ asset('js/vue-styles.css') }}"/>
     <script>
         window.Laravel = {
             csrfToken: "{!! csrf_token() !!}"
@@ -29,6 +30,7 @@
         </transition>
     </div>
 
+    <script src="{{ asset('js/manifest.js') }}"></script>
     <script src="{{ asset('js/vendor.js') }}"></script>
     <script src="{{ asset('js/user.js') }}"></script>
 </body>

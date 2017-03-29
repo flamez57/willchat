@@ -1,17 +1,17 @@
 webpackJsonp([16],{
 
-/***/ 203:
+/***/ 202:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(287)
+__webpack_require__(286)
 
-var Component = __webpack_require__(47)(
+var Component = __webpack_require__(46)(
   /* script */
-  __webpack_require__(221),
+  __webpack_require__(220),
   /* template */
-  __webpack_require__(269),
+  __webpack_require__(268),
   /* scopeId */
   "data-v-6cf5ce3e",
   /* cssModules */
@@ -39,7 +39,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 221:
+/***/ 220:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -91,15 +91,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 248:
+/***/ 247:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)();
+exports = module.exports = __webpack_require__(12)();
 exports.push([module.i, "\n.main .post-list[data-v-6cf5ce3e] {\n  display: block;\n  background-color: #fff;\n  overflow: hidden;\n  padding: 3rem;\n}\n.main .post-list li[data-v-6cf5ce3e] {\n    display: block;\n    padding: .2em 0;\n    font-size: 16px;\n    line-height: 1.5em;\n}\n.main .post-list li[data-v-6cf5ce3e]:hover {\n      background-color: rgba(255, 0, 0, 0.2);\n}\n.main .post-list li a[data-v-6cf5ce3e] {\n      display: block;\n      color: #555;\n}\n.main .post-list li a[data-v-6cf5ce3e]:visited {\n        color: red;\n}\n", ""]);
 
 /***/ }),
 
-/***/ 269:
+/***/ 268:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -137,17 +137,17 @@ if (false) {
 
 /***/ }),
 
-/***/ 287:
+/***/ 286:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(248);
+var content = __webpack_require__(247);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(48)("ea05477a", content, false);
+var update = __webpack_require__(47)("ea05477a", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
