@@ -35,10 +35,14 @@ mix.webpackConfig({
   }
 });
 
-mix.setPublicPath(path.resolve(__dirname, 'public/js'));
-mix.setResourceRoot('/js/');
+mix.setPublicPath('public/js');
+// mix.setResourceRoot('/js/');
 
 mix.js('resources/assets/js/user/index.js', 'user.js').extract(['vue', 'vue-router', 'vuex', 'axios', 'vue-axios', 'element-ui']);
+
+mix.options({
+  extractVueStyles: true
+});
 
 // if (process.env.NODE_ENV === 'production') {
 //   // 删除原构建的文件
