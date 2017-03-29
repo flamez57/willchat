@@ -29,19 +29,26 @@ mix.webpackConfig({
         use: ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
+  },
+  output: {
+    publicPath: '/js/'
   }
 });
 
-mix.options({
-  extractVueStyles: true,
-  // processCssUrls: true,
-  // uglify: {},
-  // purifyCss: false,
-  // postCss: [require('autoprefixer')],
-  // clearConsole: false
-});
+mix.setPublicPath(path.resolve(__dirname, 'public/js'));
+mix.setResourceRoot('/js/');
 
-mix.js('resources/assets/js/user/index.js', 'public/js/user.js').extract(['vue', 'vue-router', 'vuex', 'axios', 'vue-axios', 'element-ui']);
+mix.js('resources/assets/js/user/index.js', 'user.js').extract(['vue', 'vue-router', 'vuex', 'axios', 'vue-axios', 'element-ui']);
+
+// if (process.env.NODE_ENV === 'production') {
+//   // 删除原构建的文件
+//   rm('-rf', path.join(__dirname, 'public/js'));
+//
+//   mix.version([
+//     'public/js/vendor.js',
+//     'public/js/user.entry.js'
+//   ]);
+// }
 
 mix.browserSync({
   proxy: 'localhost:8020/user',

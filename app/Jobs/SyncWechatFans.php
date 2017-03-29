@@ -2,6 +2,7 @@
 
 namespace App\Jobs;
 
+use App\Fan;
 use App\Repositories\FanRepository;
 use Cache;
 use Illuminate\Bus\Queueable;
@@ -9,7 +10,6 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
-use App\Fan;
 
 class SyncWechatFans implements ShouldQueue
 {
