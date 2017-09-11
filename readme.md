@@ -21,6 +21,7 @@ WillChat 是一套简单的微信管理系统。
 ### 安装
 
 1. 克隆代码到自己想要的安装目录
+git clone https://github.com/flamez57/willchat.git
 
 2. 配置 Apache 或 Nginx 虚拟主机
 
