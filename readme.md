@@ -21,16 +21,27 @@ WillChat 是一套简单的微信管理系统。
 ### 安装
 
 1. 克隆代码到自己想要的安装目录
-```shell
-git clone https://github.com/flamez57/willchat.git
-```
+    ```shell
+    git clone https://github.com/flamez57/willchat.git
+    ```
 2. 配置 Apache 或 Nginx 虚拟主机
 
 3. 安装依赖包
 
     ```shell
     composer install -vvv
+    ```
+注：这部肯能会报错，出现此错误的原因是php.ini中的fileinfo扩展没有开启，开启 extension=php_fileinfo.dll，
+    ```shell
+    vi /usr/local/php/etc/php.ini
     ```
+再重新执行命令安装就可以了  
+PHP重启：
+    ```shell
+    service php-fpm restart
+    ```
+如果你使用的是2016-06-19之后安装oneinstack
+执行./addons.sh 选择4 安装fileinfo即可
 
 4. 复制根目录下 .env.example 文件为 .env
 
@@ -47,7 +58,10 @@ git clone https://github.com/flamez57/willchat.git
     ```shell
     php artisan migrate
     ```
-
+8.完成后访问可能会报500错误 
+    ```shell
+    chmod -R 777 storage
+    ```
 ### 演示地址
 
 **[http://www.willchat.wang](http://www.willchat.wang)**
