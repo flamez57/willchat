@@ -28,29 +28,24 @@ WillChat 是一套简单的微信管理系统。
 
 Nginx
 
-    ```shell
     if (!-e $request_filename) {
        rewrite  ^(.*)$  /index.php?s=/$1  last;
        break;
     }
-    ```
+    
 3. 安装依赖包
-
     ```shell
     composer install -vvv
     ```
+    
 注：这部可能会报错，出现此错误的原因是php.ini中的fileinfo扩展没有开启，开启 extension=php_fileinfo.dll，
 
-    ```shell
     vi /usr/local/php/etc/php.ini
-    ```
     
 再重新执行命令安装就可以了  
 PHP重启：
 
-    ```shell
     service php-fpm restart
-    ```
     
 如果你使用的是2016-06-19之后安装oneinstack
 执行./addons.sh 选择4 安装fileinfo即可
@@ -73,9 +68,7 @@ PHP重启：
     
 8.完成后访问可能会报500错误 
 
-    ```shell
     chmod -R 777 storage
-    ```
     
 ### 演示地址
 
