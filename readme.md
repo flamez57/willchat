@@ -36,7 +36,7 @@ Nginx
 3. 安装依赖包
     ```shell
     composer install -vvv
-    ```
+
     
 注：这部可能会报错，出现此错误的原因是php.ini中的fileinfo扩展没有开启，开启 extension=php_fileinfo.dll，
 
